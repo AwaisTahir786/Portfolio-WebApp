@@ -1,0 +1,75 @@
+"use client";
+import React from "react";
+import dynamic from "next/dynamic";
+
+const AnimatedNumbers: any = dynamic(
+  () => {
+    return import("react-animated-numbers");
+  },
+  { ssr: false }
+);
+
+const achievementsList = [
+  {
+    metric: "Projects",
+    value: "20",
+    postfix: "+",
+  },
+  {
+    prefix: "~",
+    metric: "Users",
+    value: "100,00",
+  },
+  {
+    metric: "Awards",
+    value: "3",
+  },
+  {
+    metric: "Years",
+    value: "2",
+    postfix: "+",
+
+  },
+];
+
+function AchievementsSection() {
+  return (
+    <div className="py-8 px-8 xl:gap-16 xl-px-16 sm:py-16">
+      <div className="sm:border-[#33353F] sm:border py-8 px-16 rounded-md flex sm:flex-row justify-between flex-col ">
+        {achievementsList.map((achievement, index) => {
+          return (
+            <div
+              key={index}
+              className="text-white flex flex-col justify-center	  mx-4"
+            >
+              <h2 className="text-white text-4xl font-bold flex flex-row ">
+                {achievement.prefix}
+
+                {
+                  <AnimatedNumbers
+                    includeComma
+                    animateToNumber={parseInt(achievement.value)}
+                    local="en-Us"
+                    className="text-white text-4xl font-bold"
+                    configs={(_: any, index: any) => {
+                      return {
+                        mass: 1,
+                        friction: 100,
+                        tensions: 140 * (index + 1),
+                      };
+                    }}
+                  />
+                }
+                {achievement.postfix}
+              </h2>
+
+              <p className="text-[#ADB7BE] text-base">{achievement.metric}</p>
+            </div>
+          );
+        })}
+        ;
+      </div>
+    </div>
+  );
+}
+export default AchievementsSection;
