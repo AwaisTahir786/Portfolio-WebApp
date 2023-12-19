@@ -39,13 +39,8 @@ function NavbarUi() {
           href={"/"}
           className="flex items-center text-1xl md:text-2xl text-white   "
         >
-          <Image
-          src="/images/logo1.png"
-          alt="Picture of the author"
-          width={50}
-          height={50}
-        />
-        <p className="ml-2">Awais Tahir</p>
+      
+        <p className="ml-2 font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-400 to-secondary-700">Awais Tahir</p>
         </Link>
 
         <div className="mobile-menu block md:hidden">

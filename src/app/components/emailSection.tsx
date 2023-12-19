@@ -12,6 +12,7 @@ function EmailSection() {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault(); // Bydefault behavior can be cancelled
+
     const data = {
       email: e.target.email.value,
       subject: e.target.subject.value,
@@ -42,6 +43,7 @@ function EmailSection() {
     if (response.status === 200) {
       console.log("Message is Send");
       setEmailSubmitted(true);
+
     }
   };
 

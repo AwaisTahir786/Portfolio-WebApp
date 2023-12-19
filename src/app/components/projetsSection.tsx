@@ -10,8 +10,8 @@ import { animate, motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: "1",
-    title: "React Portfolio Website",
-    description: "Project 1 description",
+    title: "Portfolio Website",
+    description: "Compilation of academic and professional materials that exemplifies your beliefs, skills, qualifications, education, training, and experiences.",
     image: "/images/projects/1.png",
     tags: ["All", "Web"],
     github: "https://github.com/AwaisTahir786",
@@ -20,7 +20,7 @@ const projectsData = [
   {
     id: 2,
     title: "Potography Portfolio Website",
-    description: "Project 2 description",
+    description: "This website typically provides information about the photographer and their work, along with the ability to view and purchase their images.",
     image: "/images/projects/2.png",
     tags: ["All", "Web"],
     github: "https://github.com/AwaisTahir786",
@@ -29,7 +29,7 @@ const projectsData = [
   {
     id: 3,
     title: "E-commerce Application",
-    description: "Project 3 description",
+    description: "This website is an online platform where businesses sell products or services directly to customers through the internet.",
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
     github: "https://github.com/AwaisTahir786",
@@ -38,7 +38,7 @@ const projectsData = [
   {
     id: 4,
     title: "Food Ordering Application",
-    description: "Project 4 description",
+    description: "My website often provide a user-friendly interface for browsing menus, selecting items, and customizing orders.",
     image: "/images/projects/4.png",
     tags: ["All", "Mobile"],
     github: "https://github.com/AwaisTahir786",
@@ -46,7 +46,7 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "React Firebase Template",
+    title: "Firebase Template",
     description: "Authentication and CRUD operations",
     image: "/images/projects/5.png",
     tags: ["All", "Web"],
@@ -56,14 +56,25 @@ const projectsData = [
   {
     id: 6,
     title: "Full-stack Roadmap",
-    description: "Project 5 description",
+    description: "This site provide a full stack road map about web developers.",
     image: "/images/projects/6.png",
     
     tags: ["All", "Web"],
     github: "https://github.com/AwaisTahir786",
     preview: "/",
   },
+  {
+    id: 7,
+    title: "To-Do App",
+    description: "List of tasks you need to complete or things that you want to do",
+    image: "/images/projects/todo.png",
+    
+    tags: ["All", "Mobile"],
+    github: "https://github.com/AwaisTahir786",
+    preview: "https://to-do-app-one-beta.vercel.app/",
+  },
 ];
+
 
 function ProjetsSection() {
   const [tag, setTag] = useState<string>("All");
@@ -98,7 +109,7 @@ function ProjetsSection() {
           onClick={handleTag}
         />
       </div>
-      <ul ref={ref} className="grid grid-cols-3 gap-4 ">
+      <ul ref={ref} className="grid md:grid-cols-3 gap-4 sm:grid-cols-2 grid-cols-1  ">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}

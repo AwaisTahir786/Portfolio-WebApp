@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function Footer() {
   return (
-    <footer className='text-whitefooter border  border-t-[#33353F] border-l-transparent border-r-transparent text-white'>
+    <footer className='text-whitefooter border  border-t-[#33353F] border-l-transparent border-r-transparent border-b-transparent'>
         <div className='container flex justify-between items-center p-5'>
             <span><Image
           src="/images/logo1.png"

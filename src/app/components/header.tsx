@@ -7,24 +7,11 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { url } from "inspector";
 
+const cvLink = "http://localhost:3000/images/AT_frontend2.pdf";
+
+
 function Header() {
 
-  const cvLink="http://localhost:3000/images/AT_frontend2.pdf";
-
-  function fileDownload(url:any){
-    fetch(url).then((response)=> response.blob()).then((blog)=>{
-
-      const filename = url.split("/").pop();
-      const aTag=document.createElement("a");
-      aTag.href=url;
-      aTag.setAttribute("download" , filename);
-      document.body.appendChild(aTag);
-      aTag.click();
-      aTag.remove();
-      
-    })
-   
-  }
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12 ">
@@ -42,7 +29,7 @@ function Header() {
             <Animation />
           </h1>
           <p className="lg:text-xl text-lg text-[#ADB7BE] px-12 py-4 mb-6">
-          Make it work, make it right, make it fast !
+            Make it work, make it right, make it fast !
           </p>
 
           <div className="px-12">
@@ -51,11 +38,9 @@ function Header() {
                 Hire Me
               </button>
             </Link>
-            <Link href={"/"}>
+            <Link href={cvLink} download="Resume">
               <button className="rounded-full w-full sm:w-fit bg-gradient-to-r from-third-500 via-primary-500 to-secondary-500 px-1 py-1 hover:bg-slate-800 text-white  mt-3 ">
-                <span className=" block rounded-full bg-[#121212] hover:bg-slate-800 px-5 py-2"
-                onClick={()=> fileDownload(cvLink)}
-                >
+                <span className=" block rounded-full bg-[#121212] hover:bg-slate-800 px-5 py-2">
                   Download CV{" "}
                 </span>
               </button>
