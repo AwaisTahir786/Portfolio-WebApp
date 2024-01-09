@@ -66,8 +66,7 @@ function AchievementsSection() {
               <p className="text-[#ADB7BE] text-base">{achievement.metric}</p>
             </div>
           );
-        })}
-        ;
+        })};
       </div>
     </div>
   );
