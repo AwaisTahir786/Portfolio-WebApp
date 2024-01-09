@@ -16,17 +16,17 @@ const projectsData = [
     image: "/images/projects/1.png",
     tags: ["All", "Web"],
     github: "https://github.com/AwaisTahir786",
-    preview: "/",
+    preview: "https://portfolio-web-app-virid.vercel.app/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
+    title: "Blog Website",
     description:
-      "This website typically provides information about the photographer and their work, along with the ability to view and purchase their images.",
-    image: "/images/projects/2.png",
+      "This is a personal or corporate website that regularly offers new and informative articles, usually on a specific topic or range of topics.",
+    image: "/images/projects/two.png",
     tags: ["All", "Web"],
     github: "https://github.com/AwaisTahir786",
-    preview: "/",
+    preview: "https://blog-web-application-chi.vercel.app/",
   },
   {
     id: 3,
