@@ -5,9 +5,7 @@ import Animation from "./animation";
 import ProjetsSection from "./projetsSection";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { url } from "inspector";
 
-const cvLink = "http://localhost:3000/images/AT_frontend2.pdf";
 
 
 function Header() {
@@ -38,7 +36,7 @@ function Header() {
                 Hire Me
               </button>
             </Link>
-            <Link href={cvLink} download="Resume">
+            <Link href={"/images/Awais-Resume.pdf"} download="Resume">
               <button className="rounded-full w-full sm:w-fit bg-gradient-to-r from-third-500 via-primary-500 to-secondary-500 px-1 py-1 hover:bg-slate-800 text-white  mt-3 ">
                 <span className=" block rounded-full bg-[#121212] hover:bg-slate-800 px-5 py-2">
                   Download CV{" "}
