@@ -62,7 +62,7 @@ function AboutMe() {
         />
 
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="font-bold text-4xl mb-4 ">About Me</h2>
+          <h2 className="font-bold text-4xl mb-4 text-primary-500 ">About Me</h2>
           <p className="text-base lg:text-lg">
             {" "}
             I am a full stack web developer with a passion for creating
