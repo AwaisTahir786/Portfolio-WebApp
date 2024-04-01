@@ -50,11 +50,11 @@ function EmailSection() {
   return (
     <section className="text-white grid md:grid-cols-2 md:my-12 my-12 py-24 gap-4 relative " id="contact">
       {/* circule Effect */}
-     <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
+     {/* <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div> */}
 
 
       <div className="z-10">
-        <h5 className="text-xl font-bold text-white my-2">Lets Connect</h5>
+        <h5 className="text-xl font-bold text-[#fff10f] my-2">Lets Connect</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
         I&apos;m currently looking for new opportunities, my inbox is always
           open. Whether you have a question or just want to say hi, I&apos;ll
@@ -73,7 +73,7 @@ function EmailSection() {
 
       <form className="flex flex-col " onSubmit={handleSubmit}>
         <div className="mb-6">
-          <label htmlFor="email" className="block mb-2 text-sm font-medium">
+          <label htmlFor="email" className="block mb-2 text-sm font-medium text-[#fff10f]">
             Enter your email
           </label>
           <input
@@ -87,7 +87,7 @@ function EmailSection() {
         </div>
 
         <div className="mb-6">
-          <label htmlFor="text" className="block mb-2 text-sm font-medium">
+          <label htmlFor="text" className="block mb-2 text-sm font-medium text-[#fff10f]">
             Subject
           </label>
           <input
@@ -101,7 +101,7 @@ function EmailSection() {
         </div>
 
         <div className="mb-6">
-          <label htmlFor="message" className="block mb-2 text-sm font-medium">
+          <label htmlFor="message" className="block mb-2 text-sm font-medium text-[#fff10f]">
             Message
           </label>
           <textarea
@@ -113,7 +113,7 @@ function EmailSection() {
         </div>
         <button
           type="submit"
-          className="bg-primary-500 hover:bg-primary-600 text-medium py-2.5 px-5 rounded-lg w-full"
+          className="bg-[#fff10f] hover:bg-[#ffef0fd2]  text-black text-xl text-medium py-2.5 px-5 rounded-lg w-full"
         >
           Send Message
         </button>

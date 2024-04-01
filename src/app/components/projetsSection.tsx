@@ -101,7 +101,7 @@ function ProjetsSection() {
 
   return (
     <section id="projects">
-      <h2 className="text-white text-center font-bold text-4xl mt-4 mb-8 md:mb-16 ">
+      <h2 className="text-[#fff10f] text-center font-bold text-4xl mt-4 mb-8 md:mb-16 ">
         Projects
       </h2>
 
@@ -116,7 +116,7 @@ function ProjetsSection() {
       </div>
       <ul
         ref={ref}
-        className="grid md:grid-cols-3 gap-4 sm:grid-cols-2 grid-cols-1  "
+        className="grid md:grid-cols-3 gap-4 sm:grid-cols-2 grid-cols-1 mt-16  "
       >
         {filteredProjects.map((project, index) => (
           <motion.li

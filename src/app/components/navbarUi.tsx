@@ -33,14 +33,14 @@ function NavbarUi() {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 border border-[#33353F] right-0 z-10 bg-[#121212] bg-opacity-100">
+    <nav className="fixed top-0 left-0 border border-[#41434c] right-0 z-10 bg-black bg-opacity-100">
       <div className="text-white flex flex-wrap  container justify-between mx-auto p-5 lg:py-5">
         <Link
           href={"/"}
           className="flex items-center text-1xl md:text-2xl text-white   "
         >
       
-        <p className="ml-2 font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-400 to-secondary-700">Awais Tahir</p>
+        <p className="ml-2 font-bold text-[#fff10f]">Awais Tahir</p>
         </Link>
 
         <div className="mobile-menu block md:hidden">

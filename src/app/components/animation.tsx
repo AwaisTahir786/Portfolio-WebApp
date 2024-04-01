@@ -16,7 +16,7 @@ const Animation = () => {
       ]}
       wrapper="span"
       speed={50}
-      style={{ fontSize: '1em', display: 'inline-block' }}
+      style={{ fontSize: '3rem', display: 'inline-block' }}
       repeat={Infinity}
     />
   );
