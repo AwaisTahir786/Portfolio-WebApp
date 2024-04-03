@@ -5,18 +5,18 @@ const Animation = () => {
   return (
     <TypeAnimation
       sequence={[
-        'Awais',
+        'Web Developer_',
         1000, 
-        'Web developer',
+        'React.js developer_',
         1000,
-        'Mobile App developer',
+        'Software Engineer_',
         1000,
-        'Web Designer',
+        'Next.js Developer_',
         1000
       ]}
       wrapper="span"
       speed={50}
-      style={{ fontSize: '3rem', display: 'inline-block' }}
+      style={{ fontSize: '2rem', display: 'inline-block' }}
       repeat={Infinity}
     />
   );

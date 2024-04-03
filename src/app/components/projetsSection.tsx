@@ -101,7 +101,7 @@ function ProjetsSection() {
 
   return (
     <section id="projects">
-      <h2 className="text-[#fff10f] text-center font-bold text-4xl mt-4 mb-8 md:mb-16 ">
+      <h2 className="text-[#fff10f] text-center font-bold text-5xl mt-4 mb-8 md:mb-16 ">
         Projects
       </h2>
 

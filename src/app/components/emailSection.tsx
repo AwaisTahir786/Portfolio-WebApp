@@ -54,7 +54,7 @@ function EmailSection() {
 
 
       <div className="z-10">
-        <h5 className="text-xl font-bold text-[#fff10f] my-2">Lets Connect</h5>
+        <h5 className="text-3xl font-bold text-[#fff10f] my-2">Lets Connect</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
         I&apos;m currently looking for new opportunities, my inbox is always
           open. Whether you have a question or just want to say hi, I&apos;ll
@@ -74,7 +74,7 @@ function EmailSection() {
       <form className="flex flex-col " onSubmit={handleSubmit}>
         <div className="mb-6">
           <label htmlFor="email" className="block mb-2 text-sm font-medium text-[#fff10f]">
-            Enter your email
+            Enter your email :
           </label>
           <input
             name="email"
@@ -88,7 +88,7 @@ function EmailSection() {
 
         <div className="mb-6">
           <label htmlFor="text" className="block mb-2 text-sm font-medium text-[#fff10f]">
-            Subject
+            Subject :
           </label>
           <input
             name="subject"
@@ -102,7 +102,7 @@ function EmailSection() {
 
         <div className="mb-6">
           <label htmlFor="message" className="block mb-2 text-sm font-medium text-[#fff10f]">
-            Message
+            Message :
           </label>
           <textarea
             name="message"
@@ -113,12 +113,12 @@ function EmailSection() {
         </div>
         <button
           type="submit"
-          className="bg-[#fff10f] hover:bg-[#ffef0fd2]  text-black text-xl text-medium py-2.5 px-5 rounded-lg w-full"
+          className="bg-[#fff10f] hover:bg-[#ffef0fd2]  text-black text-xl font-semibold text-medium py-2.5 px-5 rounded-lg w-full"
         >
           Send Message
         </button>
         {emailSubmitted && (
-          <p className="text-green-500 mt-2 text-sm">
+          <p className="text-green-500 mt-2 text-lg">
             Email sent Successfully!
           </p>
         )}

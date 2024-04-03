@@ -15,8 +15,10 @@ const Tabdata:any = [
         <li>Next.js</li>
         <li>TypeScript</li>
         <li>JavaScript</li>
-        <li>Tailwind</li>
+        <li>Tailwind CSS</li>
         <li>Bootstrap</li>
+        <li>Sanity</li>
+
       </ul>
     ),
   },
@@ -25,7 +27,7 @@ const Tabdata:any = [
     id: "education",
     content: (
       <ul className="text-disc pl-2" >
-        <li>Becholar in Computer Science</li>
+        <li>Becholar in Computer Science(GCUF)</li>
         <li>ICS for Aspire Group of colleges</li>
       </ul>
     ),
@@ -36,6 +38,7 @@ const Tabdata:any = [
     content: (
       <ul className="text-disc pl-2">
         <li>PSDF internship as a frontend developer</li>
+        <li>The Mind Gauge Full Stack Developer</li>
       </ul>
     ),
   },
